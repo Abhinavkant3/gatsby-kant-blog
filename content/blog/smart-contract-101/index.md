@@ -1,31 +1,43 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+title: Smart Contracts 101
+date: "2022-02-24T00:00:03.284Z"
+description: "Let's Learn Solidity"
 ---
 
-This is my first post on my new fake blog! How exciting!
-
+This is my first post on my new blog! How exciting!<br>
 I'm sure I'll write a lot more interesting things in the future.
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+Oh, btw you guys might be curious to learn [Ethereum](https://en.wikipedia.org/wiki/Salted_duck_egg) and [Solidity](https://docs.soliditylang.org/en/v0.8.12/) after the 2021 Crypto Bull Run.
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+Learning Smart Contract Development is absolute necessity if you want to be a Blockchain or a web3.0 developer. 
 
-![Chinese Salty Egg](./salty_egg.jpg)
+But, what the heck is a Smart Contract?
 
-You can also write code blocks here!
+### Smart Contracts: A Transparent Way To Do Business
+> "A smart contract is an agreement, in the form of a computer program
+> that is executed automatically once certain pre-programmed conditions are satisfied.
+> On blockchain, the goal of a smart contract is to simplify business and trade between both anonymous and identified parties,
+> sometimes without the need for a middleman."<br>
+> -- <cite>Infosys Digital Future Newsletter </cite>
+
+This is how the "Hello World" of Solidity Smart Contract on Ethereum Blockchain looks like:
 
 ```js
-const saltyDuckEgg = "chinese preserved food product"
+// My First Smart Contract 
+pragma solidity 0.8.7;
+contract HelloWorld {
+    function get()public pure returns (string memory){
+        return 'Hello Contracts';
+    }
+}
 ```
+<h4 style="color: #0773bddb;">But why do we need Smart Contracts at the first place?</h4>
+
+Let's take a simple scenario. Suppose you're living in USA and you have to send $5000 to your friend living in India. The traditional way is to go to your bank and Transfer the money to your friend's bank account. The Bank (The centralised System) is the mediator on which you 'Trust'. The bank as a service provider will charge you money as a commision fees for this wire transfer. Also there are Remittance charges you need to pay while transferring the money (Out of scope. need to to discuss further). Your friend might end up receiving $4500.
+
+**But, Can't we send money directly without the middlemen or a third party involved?**
+
+Suppose We have trust issues. People can't be trusted. Middlemen and companies can't be trusted. So can we build a system which is automated and we just have to trust the Full-proof
 
 | Number | Title                                    | Year |
 | :----- | :--------------------------------------- | ---: |
